@@ -1,0 +1,84 @@
+/* Estilização da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das células */
+th, td {
+    text-align: left;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+/* Cabeçalho com cores vibrantes */
+th {
+    background-color: #4CAF50; /* Verde elegante */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Alternância de cores para as linhas */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Cinza claro */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Branco puro */
+}
+
+/* Efeito de hover nas linhas */
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Personalização de células de dados */
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Adicionando bordas arredondadas na tabela */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Melhoria visual no foco */
+tr:focus-within {
+    background-color: #ffeb3b; /* Amarelo de destaque */
+}
+
+/* Efeito em células ao passar o mouse */
+td:hover {
+    background-color: #ffefd5; /* Pêssego claro */
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+/* Estilo para a frase e o valor do faturamento total */
+.faturamentoTotal {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FF5722; /* Laranja chamativo */
+    padding: 10px;
+    background-color: #FFF3E0; /* Fundo claro para contraste */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
